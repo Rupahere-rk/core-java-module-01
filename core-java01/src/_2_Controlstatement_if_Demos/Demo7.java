@@ -1,0 +1,28 @@
+package _2_Controlstatement_if_Demos;
+
+import java.util.Scanner;
+
+public class Demo7 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a year");
+        int year =scanner.nextInt();
+        //int year =2025;
+        /* year will be leap if
+       year will be divisible by 4
+       if year is century then it must be divisible by 400
+
+       if a year is divisible by 400 then it must be divisible by 4.
+
+   2000 ---> 400 ----> yes --->leap
+   1600 ----> 400----> yes ----> leap
+   2100 ----> 400----> no --> not a leap
+         */
+        if (year % 400 ==0 || ( year % 4 ==0 && year %100!=0)){
+            System.out.println(year + " year is leap");
+        } else {
+            System.out.println(year +"year is not leap");
+        }
+    }
+}
+
