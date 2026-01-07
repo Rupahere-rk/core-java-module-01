@@ -3,7 +3,7 @@ package _2_Controlstatement_while_Demos;
 public class Demo11 {
     public static void main(String[] args) {
         // find the sum of digit of the given number
-        int number = 123;
+        int number = 123456789;
         int sum = 0;
         int digit;
         while(number > 0){
